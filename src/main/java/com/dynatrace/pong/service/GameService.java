@@ -95,8 +95,8 @@ public class GameService {
     private GameResponse toResponseGame(Game game) {
         return new GameResponse(
                 game.getId(),
-                game.getPlayer1().getFirstName(),
-                game.getPlayer2().getFirstName(),
+                game.getPlayer1().getFirstName() + " " + game.getPlayer1().getLastName(),
+                game.getPlayer2().getFirstName() + " " + game.getPlayer2().getLastName(),
                 game.getScorePlayer1(),
                 game.getScorePlayer2()
         );
