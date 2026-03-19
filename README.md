@@ -1,5 +1,7 @@
 # 🏓 Pong - Tennis Player Registration API
 
+AUTHOR: Sander Roosimäe (I have just completed the assignment and am submitting it for review.)
+
 A RESTful API built with **Spring Boot 4** and **H2 in-memory database** for managing tennis player registrations.
 
 ## 📋 Features

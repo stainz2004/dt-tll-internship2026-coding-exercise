@@ -21,6 +21,7 @@ public class PlayerService {
         this.playerRepository = playerRepository;
     }
 
+    @Transactional
     public PlayerResponse createPlayer(PlayerRequest request) {
         if (playerRepository.existsByEmail(request.getEmail())) {
             throw new DuplicateEmailException(request.getEmail());
@@ -52,6 +53,7 @@ public class PlayerService {
                 .collect(Collectors.toList());
     }
 
+    @Transactional
     public void deletePlayer(Long id) {
         if (!playerRepository.existsById(id)) {
             throw new PlayerNotFoundException(id);
